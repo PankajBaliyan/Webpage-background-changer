@@ -1,0 +1,62 @@
+body {
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.maindiv {
+    height: 250px;
+    min-width: 700px;
+    width: 60%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.wrapper h1 {
+    font-size: 400%;
+    color: rgba(225, 225, 0, 0.01);
+    background-image: url("https://picsum.photos/id/974/700");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.form-label {
+    font-family: fantasy;
+}
+
+#slider_value {
+    font-size: 100px;
+    font-family: Cursive;
+}
+
+.slider {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* @keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+} */
