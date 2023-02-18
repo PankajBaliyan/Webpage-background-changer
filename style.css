@@ -1,7 +1,11 @@
 body {
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
     height: 100vh;
+    font-family: sans-serif;
 }
+
 .maindiv {
     height: 250px;
     min-width: 700px;
@@ -27,21 +31,12 @@ body {
     font-weight: 900;
 }
 
-.form-label {
-    font-family: fantasy;
+.wrapper h2 {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-#slider_value {
-    font-size: 100px;
-    font-family: Cursive;
-}
 
-.slider {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* @keyframes animate {
+@keyframes animate {
 
     0%,
     100% {
@@ -59,4 +54,34 @@ body {
     75% {
         background-position: right top;
     }
-} */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+@media screen and (max-height: 350px) {
+
+    label {
+        margin-top: 0 !important;
+    }
+
+}

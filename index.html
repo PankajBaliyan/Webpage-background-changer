@@ -5,30 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/slider.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-    <title>Background</title>
+    <script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js@v1.2.0/dist/verly.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/anuraghazra/VerlyRangeSlider@v1.0.2/src/VerlyRange.js"></script>
+    <title>BG Changer</title>
 </head>
 
-<body class="pt-5 align-middle" >
-    <div class="maindiv pt-5">
+<body class="pt-5 align-middle">
+    <div class="maindiv">
         <div class="wrapper">
             <h1>Change Website Background</h1>
         </div>
     </div>
-    <div class="w-25 text-center mx-auto mt-5 slider">
-        <label for="customRange2" class="form-label">Slide to change Background</label>
-        <input type="range" class="form-range" value="0" min="0" max="100" id="customRange2">
+
+    <div class="wrapper-outer">
+
+        <main class="wrapper">
+            <h2>Color Slider</h2>
+            <section class="all-sliders">
+                <label class="slidecontainer first me-2">
+                    <span>Red</span>
+                    <input class="slider" id="range-slider" type="range" min="0" max="255" value="0">
+                </label>
+
+                <label class="slidecontainer second">
+                    <span>Green</span>
+                    <input class="slider" id="range-slider2" type="range" min="0" max="255" value="0">
+                </label>
+
+                <label class="slidecontainer third">
+                    <span>Blue</span>
+                    <input class="slider" id="range-slider3" type="range" min="0" max="255" value="0">
+                </label>
+            </section>
+        </main>
     </div>
-    <div>
-        <p id="slider_value" class="text-center">0</p>
-    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
-<script src="./script.js"></script>
 
 </html>

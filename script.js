@@ -1,25 +1,20 @@
-let ImageSlider = document.getElementById("slider_value");
-let rangeValue = document.getElementById("customRange2");
+const red = document.getElementById("range-slider");
+const green = document.getElementById("range-slider2");
+const blue = document.getElementById("range-slider3");
+const body = document.getElementsByTagName("body")[0];
 
-document.body.style.backgroundColor = "#eb83b5";
+red.addEventListener("input", setColor);
+green.addEventListener("input", setColor);
+blue.addEventListener("input", setColor);
 
-rangeValue.oninput = function () {
-  ImageSlider.innerHTML = rangeValue.value;
-  if (rangeValue.value < 20) {
-    changeBackground("#eb83b5");
-  } else if (rangeValue.value < 40) {
-    changeBackground("#4bb2d6");
-  } else if (rangeValue.value < 60) {
-    changeBackground("#6d6af8");
-  } else if (rangeValue.value < 80) {
-    changeBackground("#b15f88");
-  } else if (rangeValue.value < 100) {
-    changeBackground("#806732");
-  } else {
-    changeBackground("#8cb2ee");
-  }
-};
+function setColor() {
+  let r = red.value;
+  let g = green.value;
+  let b = blue.value;
 
-function changeBackground(color) {
-    document.body.style.background = color;
-  }
+  body.style.backgroundColor = `rgb(${r},${g},${b})`;
+}
+
+VerlyRange("range-slider", "#ff0000");
+VerlyRange("range-slider2", "#008000");
+VerlyRange("range-slider3", "#00008B");
