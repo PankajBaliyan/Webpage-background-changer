@@ -117,11 +117,11 @@ section.all-sliders {
 }
 
 .third span {
-    color: #00008B
+    color: rgb(0, 0, 255)
 }
 
 .third .slider::-webkit-slider-thumb {
-    background: #00008B
+    background: rgb(0, 0, 255)
 }
 
 .third .slider {
