@@ -26,6 +26,10 @@
     .wrapper-outer {
         padding-bottom: 26px;
     }
+
+    canvas {
+        transform: translate(0px, -16px) !important;
+    }
 }
 
 /* TABLET DEVICES  */
