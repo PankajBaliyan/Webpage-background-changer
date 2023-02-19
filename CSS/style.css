@@ -22,7 +22,7 @@ body {
 .wrapper h1 {
     font-size: 400%;
     color: rgba(225, 225, 0, 0.01);
-    background-image: url("https://picsum.photos/id/974/700");
+    background-image: url("../Images/bg-image.jpeg");
     background-repeat: repeat;
     -webkit-background-clip: text;
     animation: animate 15s ease-in-out infinite;
