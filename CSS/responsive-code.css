@@ -52,6 +52,10 @@
     .wrapper-outer {
         width: 79%;
     }
+
+    canvas {
+        transform: translate(0px, -16px) !important;
+    }
 }
 
 /* LAPTOP DEVICES  */
@@ -61,7 +65,11 @@
     }
 
     .wrapper-outer {
-        width: 87vh;
+        width: 51vh;
+    }
+
+    canvas {
+        transform: translate(0px, -16px) !important;
     }
 }
 
